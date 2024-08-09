@@ -1,16 +1,12 @@
-import { useState } from 'react'
+import React from 'react'
 
-
-function App() {
-
+const App = () => {
   return (
-    <>
     <div>
-      Mohammed Aashiq portfolio 
-      <br/>Coming Soon.....
+      Aashiq
     </div>
-    </>
   )
 }
 
 export default App
+Aashiq
