@@ -29,6 +29,8 @@
     display: flex;
     /* border: 1px solid; */
     align-items: center;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .app-nav-List div {
