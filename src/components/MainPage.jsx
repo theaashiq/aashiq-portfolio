@@ -23,58 +23,7 @@ const handleMode = () => {
         <div 
           className='mainpage-block' 
           style={{backgroundColor: darkMode && '#272829'}}>
-
-          
-          <div className='menuPage-container'>
-            <div className='menuPgae-bubbles'>
-              <span style={{'--i':11, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':12, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':24, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':10, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':14, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':23, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':18, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':16, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':19, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':20, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':22, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':25, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':18, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':21, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':15, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':13, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':26, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':17, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':13, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':28, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              <span style={{'--i':10, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-              {window.innerWidth >= 998
-              &&  <>
-                    <span style={{'--i':11, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':12, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':24, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':10, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':14, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':23, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':18, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':16, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':19, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':20, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':22, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':25, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':18, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':21, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':15, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':13, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':26, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':17, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':13, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':28, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                    <span style={{'--i':10, borderBottom: darkMode && '20px solid #3e4042'}}></span>
-                  </>}
-            </div>
-
-            <motion.div
+          <motion.div
             className='navbar-block'
             initial={{ opacity: 0, y: -140 }}
             animate={{ opacity: 1, y: 0 }}
@@ -106,8 +55,6 @@ const handleMode = () => {
               </div>
             </div>
           </motion.div> 
-          </div>
-        
         </div>
     
     
