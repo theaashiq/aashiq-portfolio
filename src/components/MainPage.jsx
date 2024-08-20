@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import './mainpage.css'
+import Home from './Home'
 
 const MainPage = () => {
 
@@ -27,12 +28,12 @@ const handleMode = () => {
             className='navbar-block'
             initial={{ opacity: 0, y: -140 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .5, }}
+            transition={{ duration: .6, }}
             style={{backgroundColor: darkMode && '#3e4042'}}>
             {/* Logo and name */}
             <div className='navbar-logo'>
                 <img src='ma-dark.png' />
-                <p>Mohammed <span>Aashiq</span></p>
+                {/* <p>Mohammed <span>Aashiq</span></p> */}
             </div>
             {/* Menu list */}
             <div 
@@ -55,6 +56,9 @@ const handleMode = () => {
               </div>
             </div>
           </motion.div> 
+          <div>
+            <Home darkMode={darkMode}/>
+          </div>
         </div>
     
     
