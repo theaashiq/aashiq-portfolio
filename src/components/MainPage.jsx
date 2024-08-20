@@ -5,50 +5,58 @@ import './mainpage.css'
 const MainPage = () => {
 
 const [ showMenu, setShowMenu ] = useState(false)
-const [ darkMode, setDarkMode ] = useState(false)
+const [ darkMode, setDarkMode ] = useState(() => {
+  const savedMode = localStorage.getItem('darkMode')
+  return savedMode ? JSON.parse(savedMode) : false
+})
 
-// useEffect(() => {
-//   if(window.innerWidth){
-//     setShowMenu(false)
-//   }
-// },)
+useEffect(() => {
+  localStorage.setItem('darkMode', JSON.stringify(darkMode))
+},[darkMode])
 
-
-
-console.log(showMenu, 'Show Meu')
-// console.log(window.innerWidth, 'Inner width')
+const handleMode = () => {
+  setDarkMode(!darkMode)
+}
 
   return (
     <>
-        <div>
+        <div className='mainpage-block' style={{backgroundColor: darkMode && '#272829'}}>
           <motion.div
             className='navbar-block'
             initial={{ opacity: 0, y: -140 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .5, }}>
+            transition={{ duration: .5, }}
+            style={{backgroundColor: darkMode && '#3e4042'}}>
             {/* Logo and name */}
             <div className='navbar-logo'>
                 <img src='ma-dark.png' />
                 <p>Mohammed <span>Aashiq</span></p>
             </div>
             {/* Menu list */}
-            <div className={showMenu ? 'navbar-menuList navbar-menuList-mobile':'navbar-menuList'}>
+            <div 
+              style={{backgroundColor: darkMode && showMenu && '#3e4042'}}
+              className={`  ${showMenu ? 'navbar-menuList navbar-menuList-mobile' : 'navbar-menuList'} 
+                            ${darkMode ? 'navbar-menuList-darkMode' : ''}` }>
+              <div>Home</div>
+              <div>About</div>
+              <div>Portfolio</div>
+              <div>Contact</div>
+            </div>
+
+            {/* <div className={showMenu ? `'navbar-menuList' 'navbar-menuList-mobile' ${darkMode ? 'navbar-menuList-darkMode'}`:`navbar-menuList ${darkMode} ? 'navbar-menuList-darkMode'}`}>
                 <div>Home</div>
                 <div>About</div>
                 <div>Portfolio</div>
                 <div>Contact</div>
-            </div>
+            </div> */}
             {/* Nav icons */}
             <div className='navbar-menuIcons'>
-              <div>
-                <img src='dark-mode.png' />
+              <div onClick={() => handleMode()}>
+                <img src={darkMode ? 'light-mode.png' : 'dark-mode.png'} />
               </div>
-              {/* <div>
-                <img src='light-mode.png' />
-              </div> */}
               <div className='navbar-menuBtn' onClick={() => setShowMenu(!showMenu)}>
                 {/* <img src='menu-icon-dark.png' /> */}
-                <img src='menu-icon-light.png' />
+                <img src={darkMode ? 'menu-icon-dark.png': 'menu-icon-light.png'} />
               </div>
             </div>
           </motion.div> 
