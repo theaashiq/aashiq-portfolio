@@ -33,6 +33,10 @@
     overflow: hidden;
 }
 
+.app-nav-List div:first-child {
+    margin-left: 0px
+}
+
 .app-nav-List div {
     margin-left: 25px;
     cursor: pointer;
@@ -51,7 +55,25 @@
 }
 
 
+
+.app-icons-block {
+
+}
+
 @media (width <= 998px) {
+    .app-menu-icon img{
+        width: 30xp;
+        height: 30px;
+    }
+
+    .app-nav-logoBlock {
+        font-size: 16px
+    }
+
+    .app-nav-logoBlock span {
+        display: block
+    }
+
     .app-nav-List {
         display: none
     }
@@ -76,7 +98,7 @@
         width: 100%;
         right: 0px;
         max-height: 0px;
-        transition: max-height 0.5s;
+        transition: max-height 1s;
         overflow: hidden;
         border-radius: 0px 0px 12px 12px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
