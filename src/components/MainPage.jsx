@@ -5,12 +5,15 @@ import './mainpage.css'
 const MainPage = () => {
 
 const [ showMenu, setShowMenu ] = useState(false)
+const [ darkMode, setDarkMode ] = useState(false)
 
 // useEffect(() => {
 //   if(window.innerWidth){
 //     setShowMenu(false)
 //   }
 // },)
+
+
 
 console.log(showMenu, 'Show Meu')
 // console.log(window.innerWidth, 'Inner width')
@@ -20,9 +23,9 @@ console.log(showMenu, 'Show Meu')
         <div>
           <motion.div
             className='navbar-block'
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -140 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "anticipate" }}>
+            transition={{ duration: .5, }}>
             {/* Logo and name */}
             <div className='navbar-logo'>
                 <img src='ma-dark.png' />

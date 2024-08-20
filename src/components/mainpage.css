@@ -70,6 +70,15 @@
 
 
 @media (max-width: 998px) {
+
+    .navbar-logo p {
+        font-size: 14px;
+    }
+
+    .navbar-logo span {
+        display: block;
+    }
+
     .navbar-menuBtn {
         display: block
     }
