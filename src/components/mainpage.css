@@ -100,6 +100,13 @@
 .menuPgae-bubbles {
     position: absolute;
     display: flex;
+    top:0;
+    /* border: 1px solid; */
+    max-width: 90%;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    /* z-index: -1; */
 }
 
 /* .menuPgae-bubbles span:nth-child(2) {
@@ -122,12 +129,14 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 20px solid #fae2b7;
+    z-index: 0;
     /* box-shadow: 0 0 0 10px #fae2b744,
         0 0 50px #fae2b7,
         0 0 100px #fae2b7; */
     animation: animate 15s linear infinite;
     transition: border-bottom 0.5s;
     animation-duration: calc(125s / var(--i));
+    pointer-events: none;
     /* transform: rotate(calc(var(--i) * 1deg)) */
     /* transform: rotate(calc(90deg - var(--i))); */
     /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); */
