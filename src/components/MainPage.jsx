@@ -24,7 +24,7 @@ const handleMode = () => {
 useEffect(() => {
   const timer = setTimeout(() => {
     setRenderBubbles(true);
-  }, 3000); // 3 seconds
+  }, 4000); // 3 seconds
 
   return () => clearTimeout(timer);
 }, [darkMode]);
