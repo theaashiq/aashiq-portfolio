@@ -108,6 +108,7 @@
     height: 100vh;
     overflow: hidden;
     pointer-events: none;
+    transition: opacity 0.5s;
     /* z-index: -1; */
 }
 
@@ -130,15 +131,16 @@
     /* background-color: #fae2b7; */
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 20px solid #fae2b7;
+    /* border-bottom: 20px solid #fae2b7; */
     z-index: 0;
     /* box-shadow: 0 0 0 10px #fae2b744,
         0 0 50px #fae2b7,
         0 0 100px #fae2b7; */
     animation: animate 15s linear infinite;
-    transition: border-bottom 0.5s;
-    animation-duration: calc(125s / var(--i));
+    animation-duration: calc(100s / var(--i));
     pointer-events: none;
+    transition: border-bottom 0.5s, opacity 2s;
+    /* animation: fadeOut 1s ease-out forwards; Apply the fadeOut animation */
     /* transform: rotate(calc(var(--i) * 1deg)) */
     /* transform: rotate(calc(90deg - var(--i))); */
     /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); */
@@ -146,11 +148,19 @@
 }
 
 .menuPgae-bubbles span:nth-child(even) {
-    border-bottom: 20px solid #f2f2f2;
+    /* border-bottom: 20px solid #f2f2f2; */
     /* box-shadow: 0 0 0 10px #f2f2f244,
         0 0 50px #f2f2f2,
         0 0 100px #f2f2f2; */
 }
+
+
+/* .menuPgae-bubbles span:nth-child(even) {
+    border-bottom: 20px solid #f2f2f2; !impotant
+    /* box-shadow: 0 0 0 10px #f2f2f244,
+        0 0 50px #f2f2f2,
+        0 0 100px #f2f2f2; 
+} */
 
 @keyframes animate {
  0% {
@@ -161,6 +171,14 @@
  }
 }
 
+/* @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  } */
 
 @media (max-width: 998px) {
 
