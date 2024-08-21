@@ -108,9 +108,13 @@
     height: 100vh;
     overflow: hidden;
     pointer-events: none;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s ease-in-out;
     /* z-index: -1; */
 }
+
+.menuPage-bubbles.hidden {
+    opacity: 0;
+  }
 
 /* .menuPgae-bubbles span:nth-child(2) {
     transform: rotate(52deg);
@@ -137,9 +141,9 @@
         0 0 50px #fae2b7,
         0 0 100px #fae2b7; */
     animation: animate 15s linear infinite;
-    animation-duration: calc(100s / var(--i));
+    animation-duration: calc(140s / var(--i));
     pointer-events: none;
-    transition: border-bottom 0.5s, opacity 2s;
+    transition: border-bottom 0.5s;
     /* animation: fadeOut 1s ease-out forwards; Apply the fadeOut animation */
     /* transform: rotate(calc(var(--i) * 1deg)) */
     /* transform: rotate(calc(90deg - var(--i))); */

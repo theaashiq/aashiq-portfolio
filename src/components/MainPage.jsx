@@ -18,15 +18,16 @@ useEffect(() => {
 
 const handleMode = () => {
   setDarkMode(!darkMode)
+  setRenderBubbles(false)
 }
 
 useEffect(() => {
   const timer = setTimeout(() => {
     setRenderBubbles(true);
-  }, 2000); // 3 seconds
+  }, 3000); // 3 seconds
 
   return () => clearTimeout(timer);
-}, []);
+}, [darkMode]);
 
 
 
@@ -71,19 +72,24 @@ const getRandomValue = () => Math.floor(Math.random() * 21) + 10;
           </motion.div> 
 
           <div>
-         {/* {renderBubbles 
+         {/* {!renderBubbles 
           &&            */}
           <div className='menuPgae-bubbles' style={{}}>
             {Array.from({ length: 50 }).map((_, index) => (
               <span
                 key={index}
                 style={{'--i': getRandomValue(), 
-                        opacity: renderBubbles ? 0 : 1, 
-                        borderBottom: darkMode ? '20px solid #3e4042' : '20px solid #fae2b7',
+                        // opacity: renderBubbles ? 0 : 1, 
+                        borderBottom: 
+                          darkMode 
+                            ? !renderBubbles 
+                              ? '20px solid #3e4042' : '20px solid #272829' 
+                            : !renderBubbles
+                              ? '20px solid #fae2b7' : '20px solid #fff',
               }}></span>
             ))}
           </div>
-          {/* }  */}
+           {/* }   */}
 
           <div style={{position:'fixed',zIndex:'2'}}>
             <Home darkMode={darkMode} />
