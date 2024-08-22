@@ -91,7 +91,7 @@ const getRandomValue = () => Math.floor(Math.random() * 21) + 10;
           </div>
            {/* }   */}
 
-          <div style={{position:'fixed',zIndex:'2'}}>
+          <div style={{position:'fixed',zIndex:'1', width:'100%',left:0}}>
             <Home darkMode={darkMode} />
           </div>
 
