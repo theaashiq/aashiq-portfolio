@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import './mainpage.css'
 import Home from './Home'
+import About from './About'
 
 const MainPage = () => {
 
@@ -100,7 +101,7 @@ console.log(renderBubbles, 'Bubles')
       </div>
 
       <div>
-
+          <About/>
       </div>
 
     </>

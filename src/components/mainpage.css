@@ -167,6 +167,7 @@
 } */
 
 .mainPage-scrollBtn {
+    animation: fadeIn 1.5s ease-in-out;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
