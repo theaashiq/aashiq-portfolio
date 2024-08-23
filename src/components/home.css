@@ -1,11 +1,12 @@
 .home-container {
     animation: fadeIn 0.9s ease-in-out;
     /* border: 1px solid; */
-    height: 500px;
+    height: 450px;
     /* margin-top: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 1px solid; */
     /* padding-right: 20px; */
 }
 
@@ -70,7 +71,7 @@
 .home-links {
     position: absolute;
     right: 1.2%;
-    top: 324px;
+    top: 300px;
     /* border: 1px solid; */
     display: flex;
     flex-direction: column;

@@ -166,6 +166,31 @@
         0 0 100px #f2f2f2; 
 } */
 
+.mainPage-scrollBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #f0a422;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    top: 560px;
+    padding: 0px 7px 0px 14px;
+    border-radius: 20px;
+    font-weight: 300;
+    box-shadow: rgba(90, 70, 47, 0.4) 0px 8px 24px -8px;
+    transition: background-color 0.5s, color 0.5s
+}
+
+.mainPage-scrollBtn img {
+    /* border: 1px solid; */
+    border-radius: 50%;
+    height: 30px;
+    /* margin-left: 5px; */
+
+}
+
 @keyframes animate {
  0% {
     transform: translateY(100vh) scale(0)
@@ -237,4 +262,16 @@
     .navbar-menuList-mobile {
 
     }
+
+    .mainPage-scrollBtn {
+        height: 28px;
+        top: 420px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .mainPage-scrollBtn img { 
+        height: 24px;
+    }
+    
 }
