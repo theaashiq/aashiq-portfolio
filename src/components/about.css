@@ -60,6 +60,7 @@
     height: 170px;
     border-radius: 12px;
     cursor: pointer;
+    padding: 0px;
     border: 2px solid transparent;
     transition: border-color 0.5s, 
                 box-shadow 0.5s, 
@@ -76,6 +77,7 @@
 .about-mySkill p {
     margin-bottom: 0px;
     font-weight: 300;
+    font-family: Lexend;
 }
 
 @media (max-width: 998px) {

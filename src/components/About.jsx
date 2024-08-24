@@ -48,13 +48,13 @@ const About = (props) => {
       <div className='about-mySkill-container'>
 
         {mySkills.map((obj, index) => (
-          <div 
+          <button 
             className='about-mySkill' 
             style={{backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
                     color: darkMode ? '#c8c9c9' : '#333'}}>
             <img src={obj.loaction} />
             <p>{obj.skill}</p>
-          </div>
+          </button>
         ))}
       </div>
     </>
