@@ -172,7 +172,8 @@
     }
 
     .home-links {
-        top: 240px
+        top: 240px;
+        right: 14px;
     }
     
     .home-linksIcon {
