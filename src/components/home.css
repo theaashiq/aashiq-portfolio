@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 110px;
     /* border: 1px solid; */
     /* padding-right: 20px; */
 }
@@ -71,7 +72,7 @@
 .home-links {
     position: absolute;
     right: 1.2%;
-    top: 300px;
+    top: 410px;
     /* border: 1px solid; */
     display: flex;
     flex-direction: column;
@@ -139,6 +140,7 @@
 
     .home-container {
         height: 350px;
+        margin-top: 50px;
     }
 
     .home-details p {
@@ -170,7 +172,7 @@
     }
 
     .home-links {
-        top: 190px
+        top: 240px
     }
     
     .home-linksIcon {

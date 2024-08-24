@@ -1,12 +1,36 @@
 import React from 'react'
 import './about.css'
+import { motion } from 'framer-motion'
 
 const About = (props) => {
+
   const { darkMode } = props
+
+  const mySkills = [
+    { skill: "React",
+      loaction: 'logo/react-js.png' },
+    { skill: 'JavaScript',
+      loaction: 'logo/javascript.png' },
+    { skill: 'HTML',
+      loaction: 'logo/html.png' },
+    { skill: 'CSS',
+      loaction: 'logo/css.png' },
+    { skill: 'Bootstrap',
+      loaction: 'logo/bootstrap.png' },
+    { skill: 'Tailwind CSS',
+      loaction: 'logo/tailwind.png' },
+    { skill: 'Git & GitHub',
+      loaction: 'logo/github.png' }
+]
 
   return (
     <>
-      <div className='about-container'>
+      <motion.div 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{ duration: 2}}
+        // viewport={{amout:'all'}}
+        className='about-container'>
         <p className='about-heading'>About</p><span></span>
         <p className='about-details' style={{color: darkMode ? '#c8c9c9' : '#333'}}>
           I’m a Junior Frontend Developer with a solid understanding of HTML, CSS, 
@@ -18,6 +42,17 @@ const About = (props) => {
           solutions for any challenges that come my way. My attention to detail ensures 
           that every project I work on is polished and professional.
         </p>
+      </motion.div>
+      <div className='about-mySkill-container'>
+          {mySkills.map((obj, index) => (
+            <div 
+              className='about-mySkill' 
+              style={{backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
+                      color: darkMode ? '#c8c9c9' : '#333'}}>
+              <img src={obj.loaction} />
+              <p>{obj.skill}</p>
+            </div>
+          ))}
       </div>
     </>
   )

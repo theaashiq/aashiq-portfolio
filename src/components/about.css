@@ -9,7 +9,7 @@
 .about-container {
     position: relative;
     padding-left: 10px;
-    animation: fadeIn 2s ease-in-out;
+    /* animation: fadeIn 2s ease-in-out; */
 }
 
 .about-container span{
@@ -27,6 +27,20 @@
     font-size: 24px;
     font-weight: 300;
     transition: color 0.5s;
+}
+
+.about-mySkill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid;
+    margin: 0px 10%;
+}
+
+.about-mySkill {
+  transition: background-color 0.5s, color 0.5s;
 }
 
 @media (max-width: 998px) {
