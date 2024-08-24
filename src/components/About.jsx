@@ -6,6 +6,20 @@ const About = (props) => {
 
   const { darkMode } = props
 
+  const fadeInAnimationVariants = {
+    initial : {
+      opacity: 0,
+      y: 50,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index
+      }
+    })
+  }
+
   const mySkills = [
     { skill: "React",
       loaction: 'logo/react-js.png' },
@@ -48,13 +62,21 @@ const About = (props) => {
       <div className='about-mySkill-container'>
 
         {mySkills.map((obj, index) => (
-          <button 
+          <motion.div 
+            variants={fadeInAnimationVariants}
+            initial='initial'
+            whileInView="animate"
+            viewport={{
+              once: true,
+              amount: 0.05
+            }}
+            custom={index}
             className='about-mySkill' 
             style={{backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
                     color: darkMode ? '#c8c9c9' : '#333'}}>
             <img src={obj.loaction} />
             <p>{obj.skill}</p>
-          </button>
+          </motion.div>
         ))}
       </div>
     </>
