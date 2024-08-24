@@ -40,6 +40,10 @@
         height: 2.5px;
      }
 
+     .about-container {
+        padding-left: 0px;
+     }
+
      .about-details {
         margin-top: 20px;
         font-size: 14px;

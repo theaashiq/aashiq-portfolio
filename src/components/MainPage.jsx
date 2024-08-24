@@ -102,10 +102,9 @@ console.log(renderBubbles, 'Bubles')
 
       <div style={{ backgroundColor: darkMode && '#272829', 
                     transition:'background-color 0.5s',
-                    padding:'10px 16px'}}>
+                    padding:'10px'}}>
           <About darkMode={darkMode}/>
       </div>
-
     </>
   )
 }
