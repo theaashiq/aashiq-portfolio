@@ -217,6 +217,7 @@
 @media (max-width: 998px) {
     .mainpage-block {
         min-height: 380px;
+        padding: 0px
     }
 
     .navbar-logo p {
@@ -268,7 +269,11 @@
     }
 
     .navbar-menuList-mobile {
+        
+    }
 
+    .menuPgae-bubbles{
+        height: 600px;
     }
 
     .mainPage-scrollBtn {
