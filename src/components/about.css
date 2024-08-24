@@ -59,14 +59,19 @@
     width: 170px;
     height: 170px;
     border-radius: 12px;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 0px;
     border: 2px solid transparent;
     transition: border-color 0.5s, 
                 box-shadow 0.5s, 
                 background-color 0.5s, 
                 color 0.5s;
+    outline: none; /* Removes default focus outline */
     
+}
+
+.about-mySkill:active {
+    opacity: transparent;
 }
 
 .about-mySkill:hover {
