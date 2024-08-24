@@ -28,8 +28,9 @@ const About = (props) => {
       <motion.div 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{ duration: 2}}
+        transition={{ duration: 1}}
         // viewport={{amout:'all'}}
+        viewport={{ once: true, amount: 0.5 }}
         className='about-container'>
         <p className='about-heading'>About</p><span></span>
         <p className='about-details' style={{color: darkMode ? '#c8c9c9' : '#333'}}>
@@ -43,9 +44,9 @@ const About = (props) => {
           that every project I work on is polished and professional.
         </p>
       </motion.div>
-      
+      <p className='about-mySkill-heading'>My Skills</p>
       <div className='about-mySkill-container'>
-        <p className='about-mySkill-heading'>My Skills</p>
+
         {mySkills.map((obj, index) => (
           <div 
             className='about-mySkill' 
