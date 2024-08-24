@@ -17,6 +17,7 @@
     transition: background-color 0.5s;
     /* position: fixed; */
     z-index: 2;
+    /* box-shadow: rgba(90, 70, 47, 0.4) 0px 8px 24px -8px; */
 }
 
 .navbar-logo img{
@@ -167,7 +168,7 @@
 } */
 
 .mainPage-scrollBtn {
-    animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -211,6 +212,9 @@
   } */
 
 @media (max-width: 998px) {
+    .mainpage-block {
+        min-height: 440px;
+    }
 
     .navbar-logo p {
         font-size: 14px;

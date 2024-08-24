@@ -100,8 +100,10 @@ console.log(renderBubbles, 'Bubles')
         Swipe down <img src='scroll-down2.png'/>
       </div>
 
-      <div>
-          <About/>
+      <div style={{ backgroundColor: darkMode && '#272829', 
+                    transition:'background-color 0.5s',
+                    padding:'10px 16px'}}>
+          <About darkMode={darkMode}/>
       </div>
 
     </>

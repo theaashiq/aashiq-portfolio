@@ -1,0 +1,47 @@
+.about-heading {
+    margin: 0px;
+    padding-top: 10px;
+    color: #f0a422;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.about-container {
+    position: relative;
+    padding-left: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-container span{
+    position: absolute;
+    top: 65px;
+    width: 140px;
+    height: 4px;
+    background-color: #f0a422;
+    border-radius: 30px;
+}
+
+.about-details {
+    padding: 0px 6%;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    transition: color 0.5s;
+}
+
+@media (max-width: 998px) {
+    .about-heading {
+        font-size: 24px;
+    }
+
+    .about-container span{
+        top: 45px;
+        width: 80px;
+        height: 2.5px;
+     }
+
+     .about-details {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
