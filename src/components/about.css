@@ -28,7 +28,7 @@
     font-size: 20px;
     font-weight: 300;
     transition: color 0.5s;
-    line-height: 2
+    line-height: 1.6
 }
 
 .about-mySkill-container {
@@ -97,6 +97,10 @@
 }
 
 @media (max-width: 998px) {
+    .about-experience-Heading{
+        font-size: 20px
+    }
+
     .about-heading {
         font-size: 24px;
     }
