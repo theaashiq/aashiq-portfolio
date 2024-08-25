@@ -12,7 +12,7 @@
 }
 
 .home-details p {
-    font-size: 34px;
+    font-size: 24px;
     text-align: start;
     padding: 0px 30px;
     font-weight: 300;
@@ -21,7 +21,7 @@
 }
 
 .home-details-name {
-    font-size: 64px;
+    font-size: 54px;
     color: #f0a422
 }
 
@@ -72,7 +72,7 @@
 .home-links {
     position: absolute;
     right: 1.2%;
-    top: 410px;
+    top: 370px;
     /* border: 1px solid; */
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@
         margin-left: 15px;
         padding: 2px 10px;
         font-size: 14px;
-        margin-right: 3%;
+        margin-right: 5%;
     }
 
     .home-links {

@@ -1,0 +1,14 @@
+.aboutExperienceBlock {
+    display: flex;
+    flex-direction: columns;
+}
+
+.about-experienceContainer {
+    display: flex;
+    border: 1px solid;
+    margin: 0px 15%;
+}
+
+.experience-From {
+
+}

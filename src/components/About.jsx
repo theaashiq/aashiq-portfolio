@@ -1,6 +1,8 @@
 import React from 'react'
 import './about.css'
 import { motion } from 'framer-motion'
+import { mySkills } from './db/data'
+import Experience from './Experience'
 
 const About = (props) => {
 
@@ -15,27 +17,10 @@ const About = (props) => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.05 * index
+        delay: 0.1 * index
       }
     })
   }
-
-  const mySkills = [
-    { skill: "React",
-      loaction: 'logo/react-js.png' },
-    { skill: 'JavaScript',
-      loaction: 'logo/javascript.png' },
-    { skill: 'HTML',
-      loaction: 'logo/html.png' },
-    { skill: 'CSS',
-      loaction: 'logo/css.png' },
-    { skill: 'Bootstrap',
-      loaction: 'logo/bootstrap.png' },
-    { skill: 'Tailwind CSS',
-      loaction: 'logo/tailwind.png' },
-    { skill: 'Git & GitHub',
-      loaction: 'logo/github.png' }
-]
 
   return (
     <>
@@ -43,7 +28,6 @@ const About = (props) => {
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{ duration: 1}}
-        // viewport={{amout:'all'}}
         viewport={{ once: true, amount: 0.5 }}
         className='about-container'>
         <p className='about-heading'>About</p><span></span>
@@ -60,7 +44,6 @@ const About = (props) => {
       </motion.div>
       <p className='about-mySkill-heading'>My Skills</p>
       <div className='about-mySkill-container'>
-
         {mySkills.map((obj, index) => (
           <motion.div 
             variants={fadeInAnimationVariants}
@@ -79,6 +62,9 @@ const About = (props) => {
           </motion.div>
         ))}
       </div>
+
+      <Experience darkMode={darkMode}/>
+
     </>
   )
 }
