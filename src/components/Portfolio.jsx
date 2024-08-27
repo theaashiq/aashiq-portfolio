@@ -57,7 +57,37 @@ const { darkMode } = props
           ))}
         </div>
       </motion.div>
-    
+      <div className='portfolio-contBlock'>
+          <p className='about-mySkill-heading' style={{marginBottom:'10px'}}>Contributions</p>
+          <div>
+            <div className='portfolio-propName' style={{textAlign: 'center'}}>Marie ERP</div>
+            <div className='portfolio-propDetails' style={{textAlign:'center', padding:'0px 15%'}}>
+              A restaurant application to manage accounting, stock details, and profit margins of menu items.
+              Collaborating with backend developers to implement user authentication and authorization.
+              Designing a responsive and user-friendly interface using CSS5 and Bootstrap.
+            </div>
+            <div className='portfolio-propTech' style={{justifyContent:'center'}}>
+                  Tech
+                  {/* {obj.tech.map((obj) => ( */}
+                    <div 
+                      className='portfolio-propTechList' 
+                      style={{backgroundColor: darkMode ? '#272829' : '#fff'}}>
+                      React JS
+                    </div>
+                    <div 
+                      className='portfolio-propTechList' 
+                      style={{backgroundColor: darkMode ? '#272829' : '#fff'}}>
+                      CSS
+                    </div>
+                    <div 
+                      className='portfolio-propTechList' 
+                      style={{backgroundColor: darkMode ? '#272829' : '#fff'}}>
+                      Bootstrap
+                    </div>
+                  {/* // ))} */}
+            </div>
+          </div>
+      </div>
     </>
   )
 }
