@@ -27,9 +27,10 @@ const myExp = [
 const myProject = [
     {
         proName: 'Elege Leather',
+        codeLink: 'https://github.com/theaashiq/elege-leather.git',
         link: 'https://theaashiq.github.io/elege-leather/',
-        details: 'Fully functional e-commerce platform with features like product search, shopping cart, and payment integration.Implementing user authentication and authorization using firebase. Designing a responsive and user-friendly interface using CSS5 and Bootstrap.',
-        tech: 'React JS, HTML, CSS, JavaScript, Firebase',
+        details: 'Fully functional e-commerce platform with features like product search, shopping cart, and payment integration. Implementing user authentication and authorization using firebase. Designing a responsive and user-friendly interface using CSS5 and Bootstrap.',
+        tech: ['React JS', 'CSS', 'Firebase'],
         pic: 'pro/elege-leather.jpg'
     }
 ]

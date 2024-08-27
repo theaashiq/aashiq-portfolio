@@ -50,6 +50,7 @@ useEffect(() => {
     window.removeEventListener('scroll', handleScroll)
   }
 },[])
+
   return (
     <>
         <motion.div
@@ -123,6 +124,7 @@ useEffect(() => {
           <About darkMode={darkMode}/>
       </div>
       <div style={{ backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
+                    color: darkMode ? '#c8c9c9' : '#333',
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
         <Portfolio darkMode={darkMode}/>
