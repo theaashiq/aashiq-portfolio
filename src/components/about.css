@@ -1,4 +1,4 @@
-.about-heading {
+.about-heading, .portfolio-heading {
     margin: 0px;
     padding-top: 10px;
     color: #f0a422;
@@ -13,7 +13,7 @@
     /* animation: fadeIn 2s ease-in-out; */
 }
 
-.about-container span{
+.about-container span {
     position: absolute;
     top: 65px;
     width: 140px;
@@ -101,7 +101,7 @@
         font-size: 20px
     }
 
-    .about-heading {
+    .about-heading, .portfolio-heading {
         font-size: 24px;
     }
 

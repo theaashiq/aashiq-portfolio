@@ -8,7 +8,7 @@
     /* border: 1px solid; */
     margin: 0px 10%;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .experience-From {
@@ -70,6 +70,7 @@
 @media (max-width: 998px) {
     .about-experienceContainer {
         margin: 0px 1%;
+        padding-bottom: 30px;
     }
 
     .experience-From {

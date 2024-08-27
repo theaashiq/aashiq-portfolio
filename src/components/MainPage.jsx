@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import './mainpage.css'
 import Home from './Home'
 import About from './About'
+import Portfolio from './Portfolio'
 
 const MainPage = () => {
 
@@ -71,7 +72,7 @@ useEffect(() => {
                           ${darkMode ? 'navbar-menuList-darkMode' : ''}` }>
             <div>Home</div>
             <div>About</div>
-            <div>Portfolio</div>
+            <div>Projects</div>
             <div>Contact</div>
           </div>
           {/* Nav icons */}
@@ -120,6 +121,11 @@ useEffect(() => {
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
           <About darkMode={darkMode}/>
+      </div>
+      <div style={{ backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
+                    transition:'background-color 0.5s',
+                    padding:'10px'}}>
+        <Portfolio darkMode={darkMode}/>
       </div>
     </>
   )
