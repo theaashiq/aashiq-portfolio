@@ -1,0 +1,83 @@
+.contact-Block {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.contact-Block form {
+    border: 2px solid #f0a422;
+    width: 50%;
+    padding: 30px 30px 10px 30px;
+    border-radius: 12px;
+}
+
+
+.contact-block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+
+.contact-block1 div {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    height: 40px;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+} 
+
+.contact-block1 input {
+    width: 90%;
+    padding: 0px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    background-color: transparent;
+    /* background-color: transparent; */
+}
+
+
+.contact-blockEmail {
+    /* border: 1px solid; */
+    display: flex;
+    border-radius: 6px;
+    justify-content: center;
+    align-items:center;
+    height: 40px;
+    margin-top: 15px;
+    transition: background-color 0.5s;
+}
+
+.contact-blockEmail input,
+.contact-blockMsg textarea{
+    width: 95%;
+    height: 90%;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.contact-blockMsg {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 15px;
+    border-radius: 6px;
+    height: 100px;
+    transition: background-color 0.5s;
+}
+
+.contact-blockSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}

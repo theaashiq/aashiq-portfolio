@@ -4,6 +4,7 @@ import './mainpage.css'
 import Home from './Home'
 import About from './About'
 import Portfolio from './Portfolio'
+import Contact from './Contact'
 
 const MainPage = () => {
 
@@ -128,6 +129,11 @@ useEffect(() => {
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
         <Portfolio darkMode={darkMode}/>
+      </div>
+      <div style={{ backgroundColor: darkMode && '#272829', 
+                    transition:'background-color 0.5s',
+                    padding:'10px'}}>
+          <Contact darkMode={darkMode}/>
       </div>
     </>
   )
