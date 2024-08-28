@@ -1,4 +1,4 @@
-.about-heading, .portfolio-heading {
+.about-heading, .portfolio-heading, .contact-heading {
     margin: 0px;
     padding-top: 10px;
     color: #f0a422;
@@ -101,7 +101,7 @@
         font-size: 20px
     }
 
-    .about-heading, .portfolio-heading {
+    .about-heading, .portfolio-heading, .contact-heading {
         font-size: 24px;
     }
 
