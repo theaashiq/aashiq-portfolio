@@ -115,7 +115,7 @@
 .contact-placeHolder {
     position: absolute;
     font-size: 14px;
-    left: 20px;
+    left: 10px;
     padding: 0px 10px;
     z-index: 4;
     transition: transform 0.5s, color 0.5s ;
@@ -124,7 +124,7 @@
 .contact-placeHoldertext {
     position: absolute;
     font-size: 14px;
-    left: 16px;
+    left: 12px;
     top: 0px;
     padding: 0px 10px;
     z-index: 4;
@@ -133,12 +133,12 @@
 
 .contact-block1 input:focus + .contact-placeHolder,
 .contact-block1 input:valid + .contact-placeHolder {
-    transform: translate(-30px, -30px) scale(0.88);
+    transform: translate(-20px, -30px) scale(0.88);
 }
 
 .contact-blockEmail input:focus + .contact-placeHolder,
 .contact-blockEmail input:valid + .contact-placeHolder {
-    transform: translate(-30px, -30px) scale(0.88);
+    transform: translate(-20px, -30px) scale(0.88);
 }
 
 .contact-blockMsg textarea:focus + .contact-placeHoldertext,
