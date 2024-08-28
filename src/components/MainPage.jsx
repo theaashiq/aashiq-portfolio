@@ -60,8 +60,11 @@ useEffect(() => {
           initial={{ opacity: 0, y: -140 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: .6, }}
-          style={{ margin:'10px 14px 0px 14px', backgroundColor: darkMode && '#3e4042', 
-                  boxShadow: trackNav === 0 && 'rgba(90, 70, 47, 0.4) 0px 8px 24px -8px'}}>
+          style={{margin:'10px 14px 0px 14px', backgroundColor: darkMode && '#3e4042', 
+                  boxShadow: trackNav === 0 && 'rgba(90, 70, 47, 0.4) 0px 8px 24px -8px',
+                  marginLeft: trackNav === 0 ? '0px' : '10px',
+                  marginRight: trackNav === 0 ? '0px' : '10px',
+                  width: trackNav === 0 && '100%'}}>
           {/* Logo and name */}
           <div className='navbar-logo'>
               <img src='ma-dark.png' />

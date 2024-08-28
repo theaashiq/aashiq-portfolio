@@ -58,7 +58,7 @@ const { darkMode } = props
           ))}
         </div>
       </motion.div>
-      <div className='portfolio-contBlock'>
+      <div className='portfolio-contBlock' style={{paddingBottom:'20px'}}>
           <p className='about-mySkill-heading' style={{marginBottom:'10px'}}>Contributions</p>
           <div>
             <div className='portfolio-propName' style={{textAlign: 'center'}}>Marie ERP</div>
