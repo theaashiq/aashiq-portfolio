@@ -5,6 +5,7 @@ import Home from './Home'
 import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const MainPage = () => {
 
@@ -137,6 +138,9 @@ useEffect(() => {
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
           <Contact darkMode={darkMode}/>
+      </div>
+      <div>
+          <Footer darkMode={darkMode} />
       </div>
     </>
   )

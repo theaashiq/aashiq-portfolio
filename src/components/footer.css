@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0a422;
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+}
+
+.footer-designBy {
+    text-align: center;
+    font-size: 24px;
+    transition: color 0.5s;
+}
+
+.footer-thankYou {
+    text-align: center;
+    font-family: Caveat;
+    font-size: 34px;
+    transition: color 0.5s;
+}
+
+.footer-gmail {
+    text-align: center;
+    transition: color 0.5s;
+    font-size: 24px;
+}
+
+@media (max-width: 998px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        height: 300px;
+    }
+
+    .footer-designBy {
+        font-size: 16px;
+    }
+    
+    .footer-thankYou {
+        font-size: 26px;
+    }
+    
+    .footer-gmail {
+        font-size: 16px;
+    }
+    
+}

@@ -8,11 +8,11 @@ const Contact = (props) => {
 
   return (
     <>
-      <div 
-        // initial={{opacity:0}}
-        // whileInView={{opacity:1}}
-        // transition={{ duration: 1}}
-        // viewport={{ once: true, amount: 0.5 }}
+      <motion.div 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{ duration: 1}}
+        viewport={{ once: true, amount: 0.5 }}
         className='contact-container'>
         <div>
           <p className='contact-heading'>Contact<span></span></p>
@@ -54,7 +54,7 @@ const Contact = (props) => {
             </form>    
           </div>  
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
