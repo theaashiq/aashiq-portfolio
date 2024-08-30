@@ -135,11 +135,11 @@ const scrollToSection = (sectionRef) => {
             style={{backgroundColor: darkMode && showMenu && '#3e4042'}}
             className={`  ${showMenu ? 'navbar-menuList navbar-menuList-mobile' : 'navbar-menuList'} 
                           ${darkMode ? 'navbar-menuList-darkMode' : ''}` }>
-            <div  
+            {/* <div  
               onClick={() => {scrollToSection(homeRef), setShowMenu(!showMenu)}} 
               style={{color: visibleSection === 'Home' && '#f0a422'}}>
               Home
-            </div>
+            </div> */}
             <div
               onClick={() => {scrollToSection(aboutRef), setShowMenu(!showMenu)}} 
               style={{color: visibleSection === 'About' && '#f0a422'}}>
