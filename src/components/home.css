@@ -7,8 +7,23 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 110px;
+    /* position: relative; */
     /* border: 1px solid; */
     /* padding-right: 20px; */
+}
+
+.home-ProfilePic {
+    position: absolute;
+    top: 240px;
+    right: 60px;
+}
+
+.home-ProfilePic img {
+    width: 140px; 
+    height: 140px; 
+    /* object-fit: cover;  */
+    border-radius: 50%;
+    /* filter: contrast(140%) brightness(130%); */
 }
 
 .home-details p {
@@ -137,6 +152,20 @@
   }
 
 @media (max-width: 998px) {
+
+    .home-ProfilePic {
+        position: absolute;
+        top: 90px;
+        right: 50%;
+        transform: translateX(50px)
+    }
+    
+    .home-ProfilePic img {
+        width: 90px; 
+        height: 90px; 
+        object-fit: cover; 
+        border-radius: 50%;
+    }    
 
     .home-container {
         height: 350px;

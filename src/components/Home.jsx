@@ -11,6 +11,9 @@ const Home = (props) => {
   return (
     <>
       <div className='home-container' style={{width:'100%'}}>
+        {/* <div className='home-ProfilePic'>
+          <img src='profilePic2.jpg'/>
+        </div> */}
           <div className='home-details'>
             <p style={{color: darkMode && '#c8c9c9'}}>
               <span style={{display:'block'}}>
