@@ -39,7 +39,7 @@ useEffect(() => {
         }
       });
     },
-    { threshold: 0.2 } // Adjust this to control when a section is considered "visible"
+    { threshold: 0.3 } // Adjust this to control when a section is considered "visible"
   );
 
   sections.forEach(({ ref, name }) => {
