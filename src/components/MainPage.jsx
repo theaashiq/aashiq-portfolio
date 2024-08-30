@@ -54,7 +54,7 @@ useEffect(() => {
       if (ref.current) observer.unobserve(ref.current);
     });
   };
-}, []);
+});
 
 useEffect(() => {
   localStorage.setItem('darkMode', JSON.stringify(darkMode))
