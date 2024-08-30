@@ -39,7 +39,7 @@ useEffect(() => {
         }
       });
     },
-    { threshold: 0.3 } // Adjust this to control when a section is considered "visible"
+    { threshold: 0.4 } // Adjust this to control when a section is considered "visible"
   );
 
   sections.forEach(({ ref, name }) => {
@@ -223,6 +223,17 @@ const scrollToSection = (sectionRef) => {
       <div>
           <Footer darkMode={darkMode} />
       </div>
+
+
+      {/* {visibleSection === 'About' || visibleSection === 'Portfolio' || visibleSection === 'Contact'
+        &&  <div style={{position:'absolute', bottom:'20px'}}>
+              Up
+            </div>} */}
+            {(visibleSection === 'About' || visibleSection === 'Portfolio' || visibleSection === 'Contact') && (
+              <div className='mainPage-up' onClick={() => scrollToSection(homeRef)}>
+                <img src='up.png' />
+              </div>
+            )}
     </>
   )
 }
