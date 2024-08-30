@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import { motion } from 'framer-motion'
-import { mySkills } from './db/data'
+import { mySkills, myExp } from './db/data'
 import Experience from './Experience'
 
 const About = (props) => {
@@ -63,7 +63,38 @@ const About = (props) => {
         ))}
       </div>
 
-      <Experience darkMode={darkMode}/>
+      <motion.div
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                transition={{ duration: 1}}
+                viewport={{ once: true, amount: 0.5 }}>
+                <p className='about-experience-Heading'>Experience</p>
+                <div className='about-experienceBlock'>
+                    {myExp.map((obj) => (
+                        <div className='about-experienceContainer'>
+                            <div 
+                                className='experience-From' 
+                                style={{backgroundColor: darkMode && "#3e4042",
+                                        color: darkMode && '#c8c9c9'
+                                }}>
+                                    {obj.from}
+                            </div>
+                            <div className='experience-div'>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div className='experience-jb-block' style={{color: darkMode ? '#c8c9c9' : '#333'}}>
+                                <div className='experience-role'>{obj.role}</div>
+                                <div style={{fontWeight:'300'}} className='experience-company'>{obj.company}, {obj.loaction}</div>
+                                <div className='experience-duration' style={{fontWeight:'300'}}>{obj.duration}</div>
+                                <div className='experience-roles' style={{fontWeight:'300'}}>
+                                    {obj.res}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </motion.div>
 
     </>
   )

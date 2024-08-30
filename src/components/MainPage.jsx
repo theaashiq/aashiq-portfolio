@@ -6,6 +6,7 @@ import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Footer from './Footer'
+import Experience from './Experience'
 
 const MainPage = () => {
 
@@ -16,6 +17,44 @@ const [ darkMode, setDarkMode ] = useState(() => {
 })
 const [renderBubbles, setRenderBubbles] = useState(false);
 const [trackNav, setTrackNav] = useState(null)
+const homeRef = useRef(null);
+const aboutRef = useRef(null);
+const portfolioRef = useRef(null);
+const contactRef = useRef(null);
+const [visibleSection, setVisibleSection] = useState('');
+
+useEffect(() => {
+  const sections = [
+    { ref: homeRef, name: 'Home' },
+    { ref: aboutRef, name: 'About' },
+    { ref: portfolioRef, name: 'Portfolio' },
+    { ref: contactRef, name: 'Contact' },
+  ];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleSection(entry.target.getAttribute('data-section'));
+        }
+      });
+    },
+    { threshold: 0.2 } // Adjust this to control when a section is considered "visible"
+  );
+
+  sections.forEach(({ ref, name }) => {
+    if (ref.current) {
+      ref.current.setAttribute('data-section', name);
+      observer.observe(ref.current);
+    }
+  });
+
+  return () => {
+    sections.forEach(({ ref }) => {
+      if (ref.current) observer.unobserve(ref.current);
+    });
+  };
+}, []);
 
 useEffect(() => {
   localStorage.setItem('darkMode', JSON.stringify(darkMode))
@@ -53,6 +92,8 @@ useEffect(() => {
   }
 },[])
 
+console.log(visibleSection, 'VS')
+
   return (
     <>
         <motion.div
@@ -76,10 +117,10 @@ useEffect(() => {
             style={{backgroundColor: darkMode && showMenu && '#3e4042'}}
             className={`  ${showMenu ? 'navbar-menuList navbar-menuList-mobile' : 'navbar-menuList'} 
                           ${darkMode ? 'navbar-menuList-darkMode' : ''}` }>
-            <div>Home</div>
-            <div>About</div>
-            <div>Projects</div>
-            <div>Contact</div>
+            <div style={{color: visibleSection === 'Home' && '#f0a422'}}>Home</div>
+            <div style={{color: visibleSection === 'About' && '#f0a422'}}>About</div>
+            <div style={{color: visibleSection === 'Portfolio' && '#f0a422'}}>Projects</div>
+            <div style={{color: visibleSection === 'Contact' && '#f0a422'}}>Contact</div>
           </div>
           {/* Nav icons */}
           <div className='navbar-menuIcons'>
@@ -110,7 +151,7 @@ useEffect(() => {
                               ? '20px solid #fae2b7' : '20px solid #fff'}}>
               </span>))}
           </div>
-          <div style={{position:'absolute',zIndex:'1', width:'100%',left:'0', top:'0'}}>
+          <div ref={homeRef} style={{position:'absolute',zIndex:'1', width:'100%',left:'0', top:'0'}}>
               <Home darkMode={darkMode} />
           </div>
         </div>
@@ -123,18 +164,24 @@ useEffect(() => {
         Swipe down <img src='scroll-down2.png'/>
       </button>
 
-      <div style={{ backgroundColor: darkMode && '#272829', 
-                    transition:'background-color 0.5s',
-                    padding:'10px'}}>
+      <div 
+        ref={aboutRef} 
+        style={{backgroundColor: darkMode && '#272829', 
+                transition:'background-color 0.5s',
+                padding:'10px'}}>
           <About darkMode={darkMode}/>
+          
       </div>
-      <div style={{ backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
+      {/* <div>
+      <Experience darkMode={darkMode}/>
+      </div> */}
+      <div ref={portfolioRef} style={{ backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
                     color: darkMode ? '#c8c9c9' : '#333',
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
         <Portfolio darkMode={darkMode}/>
       </div>
-      <div style={{ backgroundColor: darkMode && '#272829', 
+      <div ref={contactRef} style={{ backgroundColor: darkMode && '#272829', 
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
           <Contact darkMode={darkMode}/>
