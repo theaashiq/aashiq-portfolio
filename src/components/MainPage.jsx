@@ -124,6 +124,7 @@ const scrollToSection = (sectionRef) => {
                   boxShadow: trackNav === 0 && 'rgba(90, 70, 47, 0.4) 0px 8px 24px -8px',
                   marginLeft: trackNav === 0 ? '0px' : '10px',
                   marginRight: trackNav === 0 ? '0px' : '10px',
+                  borderRadius: trackNav === 0 ? '0px' : '12px',
                   width: trackNav === 0 && '100%'}}>
           {/* Logo and name */}
           <div className='navbar-logo'>
@@ -192,7 +193,8 @@ const scrollToSection = (sectionRef) => {
       </div> 
       
       <button
-        className='mainPage-scrollBtn' 
+        className='mainPage-scrollBtn'
+        onClick={() => scrollToSection(aboutRef)}
         style={{color: darkMode ? '#c8c9c9' : '#333',
                 backgroundColor: darkMode ? '#272829' : '#fff'}}>
         Swipe down <img src='scroll-down2.png'/>
