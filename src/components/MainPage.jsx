@@ -94,6 +94,24 @@ useEffect(() => {
 
 console.log(visibleSection, 'VS')
 
+// const scrollToSection = (sectionRef) => {
+//   if (sectionRef.current) {
+//     sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'top' });
+//   }
+// };
+
+const scrollToSection = (sectionRef) => {
+  if (sectionRef.current) {
+    const offsetTop = sectionRef.current.offsetTop;
+    const viewportHeight = window.innerHeight;
+    const scrollToPosition = offsetTop - viewportHeight / 8;
+
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth',
+    });
+  }
+};
   return (
     <>
         <motion.div
@@ -117,10 +135,26 @@ console.log(visibleSection, 'VS')
             style={{backgroundColor: darkMode && showMenu && '#3e4042'}}
             className={`  ${showMenu ? 'navbar-menuList navbar-menuList-mobile' : 'navbar-menuList'} 
                           ${darkMode ? 'navbar-menuList-darkMode' : ''}` }>
-            <div style={{color: visibleSection === 'Home' && '#f0a422'}}>Home</div>
-            <div style={{color: visibleSection === 'About' && '#f0a422'}}>About</div>
-            <div style={{color: visibleSection === 'Portfolio' && '#f0a422'}}>Projects</div>
-            <div style={{color: visibleSection === 'Contact' && '#f0a422'}}>Contact</div>
+            <div  
+              onClick={() => {scrollToSection(homeRef), setShowMenu(!showMenu)}} 
+              style={{color: visibleSection === 'Home' && '#f0a422'}}>
+              Home
+            </div>
+            <div
+              onClick={() => {scrollToSection(aboutRef), setShowMenu(!showMenu)}} 
+              style={{color: visibleSection === 'About' && '#f0a422'}}>
+              About
+            </div>
+            <div 
+              onClick={() => {scrollToSection(portfolioRef), setShowMenu(!showMenu)}}
+              style={{color: visibleSection === 'Portfolio' && '#f0a422'}}
+              >Projects
+            </div>
+            <div 
+              onClick={() => {scrollToSection(contactRef), setShowMenu(!showMenu)}}
+              style={{color: visibleSection === 'Contact' && '#f0a422'}}>
+              Contact
+            </div>
           </div>
           {/* Nav icons */}
           <div className='navbar-menuIcons'>
