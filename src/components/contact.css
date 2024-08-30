@@ -49,6 +49,8 @@
 .contact-block1 input {
     position: absolute;
     width: 94%;
+    height: 100%;
+    border-radius: 6px;
     z-index: 5;
     padding: 0px 10px !important;
     border: none;
@@ -69,12 +71,26 @@
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
-.contact-blockEmail input,
 .contact-blockMsg textarea{
     width: 100%;
     height: 80%;
     padding: 10px;
     margin: 0px;
+    border: none;
+    outline: none;
+    z-index: 5;
+    background-color: transparent;
+    font-family: Lexend;
+    appearance : none;
+    resize: none;
+}
+
+.contact-blockEmail input{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 6px;
     border: none;
     outline: none;
     z-index: 5;
@@ -104,7 +120,7 @@
 }
 
 .contact-blockSubmit input {
-    background-color: transparent;
+    background-color: transparent !important;
     font-family: Lexend;
     border: 2px solid #f0a422;
     padding: 5px 10px;
@@ -146,14 +162,22 @@
     transform: translate(-30px, -34px) scale(0.88);
 }
 
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
     box-shadow: 0 0 0px 1000px transparent inset !important;
-    -webkit-text-fill-color: #000 !important; /* Adjust text color */
+    -webkit-text-fill-color: #000 !important; /* Adjust text color 
+} */
+
+input:-internal-autofill-selected {
+    appearance: none;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: none !important;
 }
+
 
 @media (max-width: 998px) {
     .contact-container span {

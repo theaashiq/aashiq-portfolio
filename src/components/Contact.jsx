@@ -17,17 +17,17 @@ const Contact = (props) => {
         <div>
           <p className='contact-heading'>Contact<span></span></p>
           <div className='contact-Block'>
-            <form>
+            <form autocomplete="off">
               <div className='contact-block1'>
                 <div style={{backgroundColor: darkMode ? '#3e4042' : '#e6e6e6'}}>
-                  <input type='text' style={{color: darkMode ? '#c8c9c9' : '#333'}} required />
+                  <input type='text' style={{color: darkMode ? '#c8c9c9' : '#333'}} required  autocomplete="off" />
                   <p  className='contact-placeHolder' 
                       style={{color: darkMode ? '#7c7f83' : ' #999999'}}>
                     Name
                   </p>
                 </div>
                 <div style={{ backgroundColor: darkMode ? '#3e4042' : '#e6e6e6'}}>
-                  <input type='text' style={{color: darkMode ? '#c8c9c9' : '#333'}} required/>
+                  <input type='text' style={{color: darkMode ? '#c8c9c9' : '#333'}} required autocomplete="off"/>
                   <p  className='contact-placeHolder' 
                       style={{color: darkMode ? '#7c7f83' : '#999999'}}>
                     Phone number
@@ -35,7 +35,7 @@ const Contact = (props) => {
                 </div>
               </div>
               <div className='contact-blockEmail' style={{backgroundColor: darkMode ? '#3e4042' : '#e6e6e6'}}>
-                <input type='text' style={{color: darkMode ? '#c8c9c9' : '#333'}} required />  
+                <input type='text' style={{color: darkMode ? '#c8c9c9' : '#333'}} required autocomplete="off"/>  
                 <p  className='contact-placeHolder' 
                     style={{color: darkMode ? '#7c7f83' : ' #999999'}}>
                   Email
