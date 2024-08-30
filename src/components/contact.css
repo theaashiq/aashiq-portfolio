@@ -146,6 +146,15 @@
     transform: translate(-30px, -34px) scale(0.88);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #000 !important; /* Adjust text color */
+}
+
 @media (max-width: 998px) {
     .contact-container span {
         position: absolute;
