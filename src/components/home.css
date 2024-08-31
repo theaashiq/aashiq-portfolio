@@ -188,10 +188,11 @@
         /* border: 1px solid; */
     }
     
-    .home-btns button:first-child {
+    .home-btns a {
         padding: 2px 10px;
         font-size: 14px;
-        
+        border: 1.5px solid;
+        font-weight: 300;
     }
     
     .home-btns button:last-child {
@@ -199,6 +200,7 @@
         padding: 2px 10px;
         font-size: 14px;
         margin-right: 5%;
+        font-weight: 300;
     }
 
     .home-links {
