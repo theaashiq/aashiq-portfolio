@@ -3,6 +3,8 @@ import React from 'react'
 import './home.css'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import resume from '../files/resume.pdf';
 
 const Home = (props) => {
 
@@ -28,17 +30,25 @@ const Home = (props) => {
             
               <a href='mailto:mdaashiqin2000@gmail.com'>Contact Me</a>
             {/* </button> */}
-            <button>Download CV</button>
+            {/* <button> */}
+              <a href='resume/CV.pdf' download='Moahammed Aashiq CV.pdf'>Download CV</a>
+            {/* </button> */}
           </div>
           <div className='home-links'>
               <div></div>
               <div className='home-linksIcons'>
-                  <InstagramIcon  
-                    className='home-linksIcon'
-                    style={{color: darkMode ? '#c8c9c9' : '#333'}}/>
-                  <LinkedInIcon
+                  <GitHubIcon 
+                    onClick={() => window.open('https://github.com/theaashiq', '_blank')}
                     className='home-linksIcon'   
                     style={{color: darkMode ? '#c8c9c9' : '#333'}}/>
+                  <LinkedInIcon
+                  onClick={() => window.open('https://www.linkedin.com/in/mohammed-aashiq-445569247/', '_blank')}
+                    className='home-linksIcon'   
+                    style={{color: darkMode ? '#c8c9c9' : '#333'}}/>
+                  <InstagramIcon 
+                    onClick={() => window.open('https://www.instagram.com/_the_aashiq?igsh=MW5zejlpbXZxcDgxdg==', '_blank')} 
+                    className='home-linksIcon'
+                    style={{color: darkMode ? '#c8c9c9' : '#333'}}/>  
               </div>
           </div>
       </div>
