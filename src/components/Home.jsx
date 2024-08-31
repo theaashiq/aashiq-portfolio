@@ -25,7 +25,9 @@ const Home = (props) => {
             </p>
           </div>
           <div className='home-btns'>
-            <button>Contact Me</button>
+            
+              <a href='mailto:mdaashiqin2000@gmail.com'>Contact Me</a>
+            {/* </button> */}
             <button>Download CV</button>
           </div>
           <div className='home-links'>
