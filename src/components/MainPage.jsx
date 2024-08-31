@@ -128,7 +128,7 @@ const scrollToSection = (sectionRef) => {
                   width: trackNav === 0 && '100%'}}>
           {/* Logo and name */}
           <div className='navbar-logo'>
-              <img src='ma-dark.png' />
+              <img src='mav4.png' />
               {/* <p>Mohammed <span>Aashiq</span></p> */}
           </div>
           {/* Menu list */}
