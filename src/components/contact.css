@@ -25,7 +25,24 @@
     width: 50%;
     padding: 30px 30px 10px 30px;
     border-radius: 12px;
+    position: relative;
 }
+
+.contact-loadingBlock {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+}
+
+
 
 .contact-block1 {
     display: flex;
@@ -120,12 +137,18 @@
 }
 
 .contact-blockSubmit input {
-    background-color: transparent !important;
+    background-color: transparent;
     font-family: Lexend;
     border: 2px solid #f0a422;
     padding: 5px 10px;
     border-radius: 6px;
+    transition: background-color 0.5s, color 0.5s;
     color: #f0a422;
+}
+
+.contact-blockSubmit input:hover {
+    background-color: #f0a422;
+    color: #fff;
 }
 
 .contact-placeHolder {
@@ -178,6 +201,15 @@ input:-internal-autofill-selected {
     color: none !important;
 }
 
+@keyframes salesModule-ChannelLoaderSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 
 @media (max-width: 998px) {
     .contact-container span {
@@ -187,6 +219,10 @@ input:-internal-autofill-selected {
         height: 2.5px;
         left: 12px;
     }    
+
+    .contact-loadingBlock img{
+        width: 60px;
+    }
 
     .contact-block1 {
         flex-direction: column
