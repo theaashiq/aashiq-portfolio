@@ -79,22 +79,22 @@
     border: none;
     color: #fff;
     transition: box-shadow 0.5s;
-    -webkit-tap-highlight-color: transparent;
+    /* -webkit-tap-highlight-color: #f0a422; */
     display: flex;
     align-items: center;
 }
 
-.home-btns a:focus,
+/* .home-btns a:focus,
 .home-btns a:active {
-  /* Ensure no background appears when links are focused or active */
+  /* Ensure no background appears when links are focused or active 
   background-color: transparent;
-}
+} */
 
 .home-btns a:last-child:hover,
 .home-btns a:first-child:hover {
     /* box-shadow:  #f3ba58 0px 7px 29px 0px; */
     box-shadow: #f0a728 0px 2px 15px;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 .home-links {
