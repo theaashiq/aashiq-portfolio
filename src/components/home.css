@@ -79,7 +79,7 @@
     border: none;
     color: #fff;
     transition: box-shadow 0.5s;
-    /* -webkit-tap-highlight-color: #f0a422; */
+    -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
 }
@@ -95,6 +95,11 @@
     /* box-shadow:  #f3ba58 0px 7px 29px 0px; */
     box-shadow: #f0a728 0px 2px 15px;
     /* background-color: transparent; */
+}
+
+.home-btns a:last-child:focus,
+.home-btns a:last-child:active {
+    color: #fff;
 }
 
 .home-links {
@@ -132,7 +137,7 @@
 }
 
 .home-linksIcon:hover,
-.home-btns a:focus
+.home-linksIcon:focus
 /* .home-btns a:active { */{
     color: #f0a422 !important;
 }
