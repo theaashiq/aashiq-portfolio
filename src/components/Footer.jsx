@@ -19,11 +19,19 @@ const { darkMode } = props
             Thank for scrolling
           </div>
           <div className='footer-gmail' style={{color: darkMode ? '#000' : '#fff'}}>
-              <div>mdaashiqin2000@gmail.com</div>
+              <div onClick={() => window.location.href = 'mailto:mdaashiqin2000@gmail.com'} style={{cursor:'pointer'}}>
+                mdaashiqin2000@gmail.com
+              </div>
               <div style={{marginTop:'10px'}}>
-                <InstagramIcon/>
-                <LinkedInIcon/>
-                <GitHubIcon/>
+                <GitHubIcon
+                  style={{cursor:'pointer'}}
+                  onClick={() => window.open('https://github.com/theaashiq', '_blank')}/>
+                <LinkedInIcon
+                  style={{margin: '0px 14px', cursor:'pointer'}}
+                  onClick={() => window.open('https://www.linkedin.com/in/mohammed-aashiq-445569247/', '_blank')}/>
+                <InstagramIcon
+                  style={{cursor:'pointer'}}
+                  onClick={() => window.open('https://www.instagram.com/_the_aashiq?igsh=MW5zejlpbXZxcDgxdg==', '_blank')}/>
               </div>
           </div>
       </div>

@@ -42,7 +42,7 @@ const Home = (props) => {
                     className='home-linksIcon'   
                     style={{color: darkMode ? '#c8c9c9' : '#333'}}/>
                   <LinkedInIcon
-                  onClick={() => window.open('https://www.linkedin.com/in/mohammed-aashiq-445569247/', '_blank')}
+                    onClick={() => window.open('https://www.linkedin.com/in/mohammed-aashiq-445569247/', '_blank')}
                     className='home-linksIcon'   
                     style={{color: darkMode ? '#c8c9c9' : '#333'}}/>
                   <InstagramIcon 
