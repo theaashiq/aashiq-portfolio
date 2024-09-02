@@ -132,7 +132,7 @@
 }
 
 .home-linksIcon:hover,
-.home-btns a:focus,
+.home-btns a:focus
 /* .home-btns a:active { */{
     color: #f0a422 !important;
 }
