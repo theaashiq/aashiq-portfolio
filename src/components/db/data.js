@@ -31,7 +31,7 @@ const myProject = [
         link: 'https://theaashiq.github.io/elege-leather/',
         details: 'Fully functional e-commerce platform with features like product search, shopping cart, and payment integration. Implementing user authentication and authorization using firebase. Designing a responsive and user-friendly interface using CSS5 and Bootstrap.',
         tech: ['React JS', 'CSS', 'Firebase'],
-        pic: 'pro/elege-leather.jpg'
+        pic: 'pro/elege-leather.png'
     }
 ]
 

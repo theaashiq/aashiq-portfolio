@@ -233,7 +233,8 @@ const scrollToSection = (sectionRef) => {
             </div>} */}
             {(visibleSection === 'About' || visibleSection === 'Portfolio' || visibleSection === 'Contact') && (
               <div className='mainPage-up' onClick={() => scrollToSection(homeRef)}>
-                <img src='upv2.png' />
+                {/* <img src='upv2.png' /> */}
+                Back to top
               </div>
             )}
     </>
