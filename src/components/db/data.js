@@ -42,11 +42,11 @@ const myProject = [
     },
     {
       proName: 'Data Plus',
-      codeLink: 'https://github.com/theaashiq/elege-leather.git',
-      link: 'https://theaashiq.github.io/elege-leather/',
+      codeLink: 'https://github.com/theaashiq/curd-view-main.git',
+      link: 'https://curd-view-main.vercel.app/',
       details: 'A full-stack CRUD operation site, integrating both frontend and backend functionalities. The project demonstrates seamless data management with create, read, update, and delete operations, showcasing in building end-to-end web applications',
       tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'CSS'],
-      pic: 'pro/data-plus.png'
+      pic: 'pro/data-plus1.png'
   }
 ]
 
