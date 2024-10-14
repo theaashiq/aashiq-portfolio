@@ -211,7 +211,7 @@ const scrollToSection = (sectionRef) => {
       {/* <div>
       <Experience darkMode={darkMode}/>
       </div> */}
-      <div ref={portfolioRef} style={{ backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
+      <div ref={portfolioRef} style={{ backgroundColor: darkMode && '#272829',
                     color: darkMode ? '#c8c9c9' : '#333',
                     transition:'background-color 0.5s',
                     padding:'10px'}}>
