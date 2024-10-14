@@ -124,7 +124,7 @@
 @media (max-width: 998px) {
     .portfolio {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     
     }
 
