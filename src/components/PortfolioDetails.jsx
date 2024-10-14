@@ -14,7 +14,7 @@ const PortfolioDetails = (prop) => {
         <div 
           key={idx} 
           className='portfolio-propTechList' 
-          style={{ backgroundColor: darkMode ? '#272829' : '#fff' }}>
+          style={{backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',}}>
           {tech}
         </div>
       ))}

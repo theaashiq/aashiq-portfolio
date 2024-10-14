@@ -21,9 +21,8 @@ const Home = (props) => {
               <span style={{display:'block'}}>
                 I'm <span className='home-details-name'>Mohammed Aashiq</span></span> 
                 a Web developer who enjoys building user-friendly and 
-                visually appealing websites. 
-                {/* My goal is to create smooth, interactive 
-                experiences that make the web more enjoyable for everyone. */}
+                enhancing user experiences. My goal is to create smooth, 
+                interactive experiences that make the web more engaging.
             </p>
           </div>
           <div className='home-btns'>
