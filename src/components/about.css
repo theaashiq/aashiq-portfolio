@@ -38,12 +38,14 @@
     align-items: center;
     gap: 20px;
     /* border: 1px solid; */
-    margin: 0px 15%;
+    margin: 0px 10%;
+    font-weight: 500;
     /* padding-bottom: 100px; */
 }
 
 .about-mySkill {
   transition: background-color 0.5s, color 0.5s;
+  
 }
 
 .about-mySkill-heading {
