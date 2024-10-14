@@ -23,7 +23,7 @@ const PortfolioDetails = (prop) => {
       <button 
         onClick={() => window.open(obj.codeLink, '_blank')}
         style={{ 
-          backgroundColor: darkMode ? '#272829' : '#fff',
+          backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
           color: darkMode ? '#c8c9c9' : '#333'
         }}>
         <img src='logo/github.png' alt='GitHub Logo' />
@@ -32,7 +32,7 @@ const PortfolioDetails = (prop) => {
       <button 
         onClick={() => window.open(obj.link, '_blank')}
         style={{ 
-          backgroundColor: darkMode ? '#272829' : '#fff',
+          backgroundColor: darkMode ? '#3e4042' : '#f2f2f2',
           color: darkMode ? '#c8c9c9' : '#333'
         }}>
         Link
